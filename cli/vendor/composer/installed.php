@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'reference' => 'b4d89e3cdfab45793fb4cef372ba72570e49dd31',
+        'name' => 'magnit56/cli',
+        'dev' => true,
+    ),
+    'versions' => array(
+        'docopt/docopt' => array(
+            'pretty_version' => '1.0.4',
+            'version' => '1.0.4.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../docopt/docopt',
+            'aliases' => array(),
+            'reference' => 'bf3683a16e09fa1665e493eb4d5a29469e132a4f',
+            'dev_requirement' => false,
+        ),
+        'magnit56/cli' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => 'b4d89e3cdfab45793fb4cef372ba72570e49dd31',
+            'dev_requirement' => false,
+        ),
+        'predis/predis' => array(
+            'pretty_version' => 'v1.1.10',
+            'version' => '1.1.10.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../predis/predis',
+            'aliases' => array(),
+            'reference' => 'a2fb02d738bedadcffdbb07efa3a5e7bd57f8d6e',
+            'dev_requirement' => false,
+        ),
+    ),
+);

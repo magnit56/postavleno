@@ -8,7 +8,7 @@ services:
         ports:
             - "8181:8181"
         volumes :
-            - ".:/laravel"
+            - ".:/project"
         networks:
             - myNetwork
         depends_on:
@@ -35,6 +35,19 @@ services:
         container_name: redis
         networks:
             - myNetwork
+
+    redis-commander:
+        container_name: redis-commander
+        image: rediscommander/redis-commander:latest
+        restart: always
+        environment:
+            - REDIS_HOSTS=local:redis:6379
+        ports:
+            - "8182:8081"
+        networks:
+            - myNetwork
+        depends_on:
+            - redis
 
 volumes:
     dbdata:

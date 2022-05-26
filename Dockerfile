@@ -6,8 +6,11 @@ RUN pecl install -o -f redis \
 &&  rm -rf /tmp/pear \
 &&  docker-php-ext-enable redis
 
-ADD . /laravel
-WORKDIR /laravel
-RUN composer install
-CMD php artisan serve --host=0.0.0.0 --port=8181
+ADD . /project
+
+WORKDIR /project
+RUN cd laravel \
+    && composer install \
+    && pwd
+CMD cd /project/laravel && php artisan serve --host=0.0.0.0 --port=8181
 EXPOSE 8181

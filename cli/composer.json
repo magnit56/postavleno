@@ -1,0 +1,26 @@
+{
+    "name": "magnit56/cli",
+    "autoload": {
+        "psr-4": {
+            "Magnit56\\Cli\\": "src/"
+        },
+        "files": [
+            "src/cache.php",
+            "src/run.php",
+            "config/app.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Samat Tulegenov",
+            "email": "samat.tulegenov@phystech.edu"
+        }
+    ],
+    "bin": [
+        "bin/cache"
+    ],
+    "require": {
+        "docopt/docopt": "^1.0",
+        "predis/predis": "^1.1"
+    }
+}
